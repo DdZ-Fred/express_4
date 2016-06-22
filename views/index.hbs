@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Express 4</title>
+    <style media="screen">
+      * {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        font-size: 1.2em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Express 4</h1>
+    <ul>
+      {{#each users as |user|}}
+      <div class="">
+        <img src="/profilepics/{{user.username}}_sm.jpg" alt="" />
+        <li><a href="{{user.username}}">{{user.name.full}}</a></li>
+      </div>
+      {{/each}}
+    </ul>
+  </body>
+</html>
